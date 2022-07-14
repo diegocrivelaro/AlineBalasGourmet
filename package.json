@@ -12,7 +12,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --ignore-path .gitignore"
+    "lint": "eslint --ignore-path .gitignore .editorconfig .eslintignore .eslintrc.json .next-env.d.ts package.json postcss.config.js .tailwind.config.js tsconfig.json .yarn.lock --fix",
+    "test-commit": "test --bail --findRelatedTests",
+    "test-global": "test",
+    "test-watch": "test -- --watch",
+    "type-check": "tsc --pretty",
+    "format": "prettier --write"
+  },
+  "lint-staged": {
+    "./src/**/*.{.ts,.tsx,.js,.jsx}": [
+      "yarn test-commit",
+      "yarn lint",
+      "yarn type-check",
+      "yarn gitmoji -c"
+    ]
   },
   "dependencies": {
     "next": "12.2.0",
@@ -37,7 +50,6 @@
     "eslint-plugin-prettier": "4.1.0",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "gitmoji-cli": "5.0.2",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "postcss": "8.4.14",
