@@ -1,0 +1,30 @@
+{
+  "name": "AlineBalasGourmetWEB",
+  "description": "Aline Balas Gourmet WEB Application",
+  "author": "Diego Ferreira Crivelaro",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.16.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "typescript": "4.8.3"
+  }
+}
