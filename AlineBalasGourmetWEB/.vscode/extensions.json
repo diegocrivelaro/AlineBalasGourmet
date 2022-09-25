@@ -1,5 +1,14 @@
 {
   "recommendations": [
-    "EditorConfig.EditorConfig"
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "johnpapa.vscode-cloak",
+    "wix.vscode-import-cost",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "clinyong.vscode-css-modules",
+    "usernamehw.errorlens",
+    "mikestead.dotenv",
   ]
 }
