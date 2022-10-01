@@ -17,8 +17,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "yarn lint:fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "dependencies": {
