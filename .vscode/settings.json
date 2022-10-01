@@ -1,0 +1,14 @@
+{
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true,
+    "source.organizeImports.eslint": true
+  },
+
+  // Spell Checker
+  "cSpell.words": ["Aline", "Balas", "Gourmet", "Chocolate"]
+}
