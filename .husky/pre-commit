@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "[🌀] Executando o lint:fix..."
+yarn lint:fix
+echo "[✅] Lint:fix executado com sucesso!"
