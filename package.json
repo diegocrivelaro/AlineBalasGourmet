@@ -13,11 +13,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --write ."
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+      "yarn lint:fix",
+      "yarn prettier"
     ]
   },
   "dependencies": {
