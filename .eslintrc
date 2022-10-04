@@ -75,6 +75,17 @@
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
+    ],
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.jsx",
+          "**/*.test.ts",
+          "**/*.test.tsx"
+        ]
+      }
     ]
   },
   "settings": {
