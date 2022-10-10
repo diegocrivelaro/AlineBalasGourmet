@@ -1,4 +1,4 @@
-/* module.exports = {
+module.exports = {
   testEnvironment: `jsdom`,
   preset: `ts-jest`,
   setupFilesAfterEnv: [`<rootDir>/jest/setupTest.js`],
@@ -7,12 +7,15 @@
   moduleDirectories: [`node_modules`, `<rootDir>`, `<rootDir>/src/`],
   transformIgnorePatterns: [`node_modules`],
   transform: {
-    "^.+\\.(js|ts|tsx)$": `babel-jest`,
+    "^.+\\.(js|jsx|ts|tsx)$": `ts-jest`,
   },
   moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": `<rootDir>/__mocks__/fileMock.js`,
+    "\\.(css)$": `identity-obj-proxy`,
+    "^@/(.*)$": `<rootDir>/src/$1`,
     "^@/public/(.*)$": `<rootDir>/public/$1`,
-    "^@/src/(.*)$": `<rootDir>/src/$1`,
-    "^@/src/pages/(.*)$": `<rootDir>/src/pages/$1`,
+    "^@/components/(.*)$": `<rootDir>/src/components/$1`,
+    "^@/pages/(.*)$": `<rootDir>/src/pages/$1`,
+    "^@/utils/(.*)$": `<rootDir>/src/utils/$1`,
   },
 };
- */
