@@ -6,9 +6,15 @@ module.exports = {
   testPathIgnorePatterns: [`<rootDir>/.next`, `<rootDir>/node_modules/`],
   moduleFileExtensions: [`js`, `jsx`, `ts`, `tsx`],
   moduleDirectories: [`node_modules`, `<rootDir>`, `<rootDir>/src/`],
-  transformIgnorePatterns: [`node_modules`],
+  transformIgnorePatterns: [`/node_modules/`, `^.+\\.module\\.(css)$`],
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": `babel-jest`,
+    "^.+\\.(js|jsx|ts|tsx)$": [
+      `babel-jest`,
+      {
+        presets: [`next/babel`],
+        plugins: [`babel-plugin-dynamic-import-node`],
+      },
+    ],
   },
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": `<rootDir>/__mocks__/fileMock.js`,
