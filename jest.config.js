@@ -1,13 +1,14 @@
 module.exports = {
   testEnvironment: `jsdom`,
   preset: `ts-jest`,
+  clearMocks: true,
   setupFilesAfterEnv: [`<rootDir>/jest/setupTest.js`],
   testPathIgnorePatterns: [`<rootDir>/.next`, `<rootDir>/node_modules/`],
   moduleFileExtensions: [`js`, `jsx`, `ts`, `tsx`],
   moduleDirectories: [`node_modules`, `<rootDir>`, `<rootDir>/src/`],
   transformIgnorePatterns: [`node_modules`],
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": `ts-jest`,
+    "^.+\\.(js|jsx|ts|tsx)$": `babel-jest`,
   },
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": `<rootDir>/__mocks__/fileMock.js`,
