@@ -12,7 +12,6 @@ module.exports = {
       `babel-jest`,
       {
         presets: [`next/babel`],
-        plugins: [`babel-plugin-dynamic-import-node`],
       },
     ],
   },
