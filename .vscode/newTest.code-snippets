@@ -1,0 +1,24 @@
+{
+  "newTest": {
+    "scope": "javascript,typescript",
+    "prefix": "!nt",
+    "body": [
+      "import { cleanup } from '@testing-library/react';",
+      "",
+      "describe(`$1`, () => {",
+      "  afterAll(() => {",
+      "    jest.clearAllMocks();",
+      "  });",
+      "",
+      "  afterEach(() => {",
+      "    cleanup();",
+      "    jest.resetAllMocks();",
+      "  });",
+      "",
+      "  test(`$2`, () => {$3});",
+      "});",
+      ""
+    ],
+    "description": "Snippet to create the basis of a test 🧪"
+  }
+}
