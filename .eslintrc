@@ -42,6 +42,8 @@
     "quotes": ["warn", "backtick"],
     "semi": ["error", "always"],
     "no-plusplus": "off",
+    "operator-linebreak": ["error", "after"],
+    "object-curly-newline": ["error", { "multiline": true }],
     "react/no-danger": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
