@@ -8,7 +8,6 @@ export default function SEO({
   description,
   url,
   type,
-  keywords,
   shouldIndexPage,
 }: SEOProps) {
   const pageTitle = `${companyName} | ${title}`;
@@ -18,12 +17,8 @@ export default function SEO({
 
   return (
     <Head>
-      <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       <meta name="image" content={pageImage} />
       <meta name="theme-color" content={themeColor} />
       <meta name="designer" content="Diego Ferreira Crivelaro" />
@@ -32,6 +27,7 @@ export default function SEO({
       {!shouldIndexPage && (
         <meta property="robots" content="noindex,nofollow" />
       )}
+      <link rel="canonical" href={pageUrlNoSlash} />
       <meta name="google" content="notranslate" />
 
       <meta property="og:site_name" content={companyName} />

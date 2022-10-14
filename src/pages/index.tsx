@@ -7,10 +7,9 @@ export default function Home() {
     <div className={styles.container} data-testid="casa">
       <h1>Home</h1>
       <SEO
-        title="Teste"
-        description="teste description"
-        url="test.com/"
-        keywords="AlineBalasGourmet, BalasGourmet, Balas de Coco"
+        title="Home"
+        description="As melhores balas de coco do Brasil! Feitas com todo carinho e dedicação para você!"
+        url="https://www.alinebalasgourmet.com.br/"
         type="website"
         shouldIndexPage
       />
