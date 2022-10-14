@@ -3,6 +3,5 @@ export interface SEOProps {
   description: string;
   url: string;
   type: string;
-  keywords?: string;
   shouldIndexPage: boolean;
 }
