@@ -20,6 +20,7 @@ jobs:
 
   lint-staged:
     name: Lint-Staged
+    runs-on: ubuntu-latest
 
     steps:
       - run: yarn lint-staged
@@ -27,6 +28,7 @@ jobs:
 
   tests:
     name: tests
+    runs-on: ubuntu-latest
 
     steps:
       - run: yarn test
