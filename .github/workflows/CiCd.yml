@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.Js ${{ matrix.node-version }}
+      - name: Use NodeJs ${{ matrix.node-version }} 🟢
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
-      - name: QA 🧪
+        name: QA 🧪
       - run: yarn test
 #      - uses: actions/checkout@v2
 #      - name: Use Node.Js ${{ matrix.node-version }}
