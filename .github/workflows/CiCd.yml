@@ -1,8 +1,8 @@
-name: CI/CD
+name: AlineBalasGourmet - CI/CD
 on: [push]
 jobs:
-  tests:
-    name: tests
+  start:
+    name: Start
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,5 +17,17 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
         name: Install Lib's 📦
+
+  lint-staged:
+    name: Lint-Staged
+
+    steps:
+      - run: yarn lint-staged
+        name: Lint-Staged 🔎
+
+  tests:
+    name: tests
+
+    steps:
       - run: yarn test
         name: QA 🧪
