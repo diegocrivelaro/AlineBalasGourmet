@@ -17,37 +17,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
         name: Install Lib's 📦
-
-  lint-staged:
-    name: Lint-Staged
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.16.x]
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set NodeJs 🟢
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
       - run: yarn lint-staged
         name: Lint-Staged 🔎
-
-  tests:
-    name: tests
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.16.x]
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set NodeJs 🟢
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
       - run: yarn test
         name: QA 🧪
