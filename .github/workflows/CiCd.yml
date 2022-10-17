@@ -19,7 +19,7 @@ jobs:
   typecheck:
     name: TypeCheck
     runs-on: ubuntu-latest
-    needs: qa
+    needs: build
     steps:
       - name: TypeCheck
         run: yarn type-check
