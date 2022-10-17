@@ -1,14 +1,12 @@
 name: AlineBalasGourmet - CI/CD
 on: [push]
 jobs:
-  start:
-    name: Start
+  build:
+    name: Build
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [16.16.x]
-
     steps:
       - uses: actions/checkout@v2
       - name: Set NodeJs 🟢
@@ -17,7 +15,19 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
         name: Install Lib's 📦
-      - run: yarn lint-staged
-        name: Lint-Staged 🔎
-      - run: yarn test
-        name: QA 🧪
+
+  qa:
+    name: qa
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: QA
+        run: yarn test::ci
+
+  typecheck:
+    name: TypeCheck
+    runs-on: ubuntu-latest
+    needs: qa
+    steps:
+      - name: TypeCheck
+        run: yarn type-check
