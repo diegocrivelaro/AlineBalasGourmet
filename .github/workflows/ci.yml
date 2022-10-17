@@ -1,4 +1,4 @@
-name: AlineBalasGourmet - CI/CD
+name: AlineBalasGourmet - CI
 on: [push]
 jobs:
   start:
