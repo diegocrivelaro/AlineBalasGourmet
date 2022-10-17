@@ -12,9 +12,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "type-check": "tsc",
     "lint": "next lint",
     "lint:fix": "eslint --fix",
     "test": "jest",
+    "test::ci": "jest --ci",
     "testWth": "jest --watch",
     "commit": "git-cz",
     "prettier": "prettier --write ."
