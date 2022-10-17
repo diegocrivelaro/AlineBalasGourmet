@@ -14,21 +14,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
         name: Install Lib's 📦
-
-  qa:
-    name: qa
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v2
-      - name: QA
-        run: yarn test::ci
-
-  typecheck:
-    name: TypeCheck
-    runs-on: ubuntu-latest
-    needs: qa
-    steps:
-      - uses: actions/checkout@v2
-      - name: TypeCheck
         run: yarn type-check
+        name: TypeCheck
+      - run: yarn test::ci
+        name: QA
