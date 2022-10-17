@@ -1,14 +1,18 @@
-name: AlineBalasGourmet - CI
-on: [push]
+name: AlineBalasGourmet - CI/CD (Preview) 🍭
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+on:
+  push:
+    branches-ignore:
+      - main
 jobs:
   start:
     name: Start
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [16.16.x]
-
     steps:
       - uses: actions/checkout@v2
       - name: Set NodeJs 🟢
@@ -21,3 +25,16 @@ jobs:
         name: TypeCheck
       - run: yarn test::ci
         name: QA 🧪
+
+  DeployPreview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI 📦
+        run: yarn global add vercel@latest
+      - name: Pull information from Vercel 📥
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project 🏗️
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project 📤
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
