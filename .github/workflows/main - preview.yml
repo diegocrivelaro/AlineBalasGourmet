@@ -19,39 +19,14 @@ jobs:
           cache: "yarn"
       - name: Install Lib's 📦
         run: yarn install
-      - uses: actions/cache@v3
-
-  qa:
-    name: qa
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set NodeJs 🟢
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-          cache: "yarn"
       - name: QA 🧪
         run: yarn test::ci
-
-  type-check:
-    name: type-check
-    runs-on: ubuntu-latest
-    needs: qa
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set NodeJs 🟢
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-          cache: "yarn"
       - name: TypeCheck
         run: yarn type-check
 
   DeployPreview:
     runs-on: ubuntu-latest
-    needs: type-check
+    needs: build
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI 📦
