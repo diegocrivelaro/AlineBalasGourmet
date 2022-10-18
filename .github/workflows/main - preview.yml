@@ -22,7 +22,7 @@ jobs:
         run: yarn install
       - name: Check Linting ✍️
         run: yarn lint::ci
-      - name: TypeCheck
+      - name: TypeCheck ✅
         run: yarn type-check
       - name: QA 🧪
         run: yarn test::ci
