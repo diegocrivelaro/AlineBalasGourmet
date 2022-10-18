@@ -19,6 +19,7 @@ jobs:
           cache: "yarn"
       - name: Install Lib's 📦
         run: yarn install
+      - uses: actions/cache@v3
 
   qa:
     name: qa
@@ -31,8 +32,6 @@ jobs:
         with:
           node-version: "16"
           cache: "yarn"
-      - name: Install Lib's 📦
-        run: yarn install
       - name: QA 🧪
         run: yarn test::ci
 
