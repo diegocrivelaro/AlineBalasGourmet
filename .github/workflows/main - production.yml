@@ -18,7 +18,7 @@ jobs:
           node-version: "16"
           cache: "yarn"
       - name: Install Lib's 📦
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: QA 🧪
         run: yarn test::ci
       - name: TypeCheck
