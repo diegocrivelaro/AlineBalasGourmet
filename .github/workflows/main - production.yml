@@ -7,8 +7,8 @@ on:
     branches:
       - main
 jobs:
-  start:
-    name: Start
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,13 +19,38 @@ jobs:
           cache: "yarn"
       - name: Install Lib's 📦
         run: yarn install
-      - name: TypeCheck
-        run: yarn type-check
+
+  qa:
+    name: QA
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set NodeJs 🟢
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "yarn"
       - name: QA 🧪
         run: yarn test::ci
 
+  type-check:
+    name: type-check
+    runs-on: ubuntu-latest
+    needs: qa
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set NodeJs 🟢
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "yarn"
+      - name: TypeCheck
+        run: yarn type-check
+
   DeployPreview:
     runs-on: ubuntu-latest
+    needs: type-check
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI 📦
