@@ -15,7 +15,6 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
-    "sonarjs",
     "import-helpers",
     "jsx-a11y",
     "eslint-plugin-import-helpers"
@@ -29,7 +28,6 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:sonarjs/recommended",
     "plugin:security/recommended",
     "plugin:jsx-a11y/recommended"
   ],
