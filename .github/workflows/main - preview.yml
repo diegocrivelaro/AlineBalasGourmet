@@ -27,6 +27,8 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+      - name: Install Lib's 📦
+        run: yarn install
       - name: Check Linting ✍️
         run: yarn lint::ci
       - name: TypeCheck ✅
