@@ -6421,7 +6421,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vercel@^28.4.11:
+vercel@28.4.11:
   version "28.4.11"
   resolved "https://registry.yarnpkg.com/vercel/-/vercel-28.4.11.tgz#9c4da92621c373d8b5cca767ac6d57a9222221e6"
   integrity sha512-4dBJxufZgmo9ZU3tfSjeQKTqRcVyvhj/iqCe/TDXtQdhlYFA1GPEgioPb+ipNJpbEoJ6a87DAkjCwkQrUMU/4g==
