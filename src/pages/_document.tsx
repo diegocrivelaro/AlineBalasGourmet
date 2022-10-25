@@ -13,7 +13,6 @@ export default class MyDocument extends Document<DocumentProps> {
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
