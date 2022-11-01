@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "[🌀] Executando o commitlint" && npx --no -- commitlint --edit && echo "[✅] Commitlint executado com sucesso! 🎉"
+yarn commit-msg

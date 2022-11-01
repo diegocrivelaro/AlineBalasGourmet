@@ -16,15 +16,19 @@
     "lint": "next lint",
     "lint:fix": "eslint --fix",
     "lint::ci": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "stylelint": "stylelint \"src/**/*.css\"",
     "test": "jest",
-    "test::ci": "jest --ci",
     "testWth": "jest --watch",
+    "test::ci": "jest --ci",
     "commit": "git-cz",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "commit-msg": "echo \"[🌀] Executando o commitlint\" && npx --no -- commitlint --edit && echo \"[✅] Commitlint executado com sucesso! 🎉\"",
+    "pre-commit": "echo \"[🌀] Executando o lint-staged\" && echo \"[🌀] Executando o lint:fix direto do lint-staged\" && echo \"[🌀] Executando o stylelint direto do lint-staged\" && echo \"[🌀] Executando o prettier direto do lint-staged\" && yarn lint-staged && echo \"[✅] Lint-staged executado com sucesso! 🎉\""
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn lint:fix",
+      "yarn stylelint",
       "yarn prettier"
     ]
   },
@@ -70,6 +74,9 @@
     "jest-environment-jsdom": "29.1.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
+    "stylelint": "14.14.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-standard": "29.0.0",
     "testing-library-selector": "0.2.1",
     "ts-jest": "29.0.3",
     "typescript": "4.8.3",
