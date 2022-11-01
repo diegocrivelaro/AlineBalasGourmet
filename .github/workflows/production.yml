@@ -1,13 +1,12 @@
-name: AlineBalasGourmet - CI/CD (Preview) 🍭
+name: AlineBalasGourmet - CI/CD (Production) 🍭
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
   push:
-    branches-ignore:
+    branches:
       - main
       - develop
-  pull_request:
 jobs:
   CI:
     name: CI
@@ -37,7 +36,7 @@ jobs:
       - name: QA 🧪
         run: yarn test::ci
 
-  DeployPreview:
+  DeployProduction:
     runs-on: ubuntu-latest
     needs: CI
     steps:
@@ -45,8 +44,8 @@ jobs:
       - name: Install Vercel CLI 📦
         run: yarn global add vercel@latest
       - name: Pull information from Vercel 📥
-        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project 🏗️
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project 📤
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
