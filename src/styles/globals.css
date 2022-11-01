@@ -1,6 +1,6 @@
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: #000;
+  --white: #fff;
   --red: #f23a3a;
   --rosy-red-50: #ff538b;
   --rosy-red-25: #ff678b;
@@ -23,7 +23,7 @@
 }
 
 html {
-  font-family: "Poppins", "Gill Sans", Calibri, sans-serif;
+  font-family: Poppins, "Gill Sans", Calibri, sans-serif;
   font-size: 62.5%;
   color: var(--black);
 }
