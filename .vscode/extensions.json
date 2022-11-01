@@ -1,9 +1,9 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
     "esbenp.prettier-vscode",
-    "EditorConfig.EditorConfig",
-    "johnpapa.vscode-cloak",
+    "editorconfig.editorconfig",
     "wix.vscode-import-cost",
     "streetsidesoftware.code-spell-checker",
     "streetsidesoftware.code-spell-checker-portuguese-brazilian",

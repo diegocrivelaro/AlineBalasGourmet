@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "[🌀] Executando o lint-staged" && echo "[🌀] Executando o lint:fix direto do lint-staged" && echo "[🌀] Executando o prettier direto do lint-staged" && yarn lint-staged && echo "[✅] Lint-staged executado com sucesso! 🎉"
+yarn pre-commit
