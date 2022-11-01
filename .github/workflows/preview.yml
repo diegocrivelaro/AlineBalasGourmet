@@ -31,7 +31,7 @@ jobs:
         run: yarn install
       - name: Check Linting ✍️
         run: yarn lint::ci
-      - name: Check StyleLint ✍️
+      - name: Check Stylelint ✍️
         run: yarn stylelint
       - name: TypeCheck ✅
         run: yarn type-check
