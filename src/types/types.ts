@@ -5,3 +5,10 @@ export interface SEOProps {
   type: string;
   shouldIndexPage: boolean;
 }
+
+export interface DefaultLinkProps {
+  href: string;
+  titleAccessibility?: string;
+  hasPrefetch?: boolean;
+  children: React.ReactNode;
+}

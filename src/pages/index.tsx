@@ -1,5 +1,7 @@
 import SEO from "@/components/SEO";
 
+import DefaultLink from "../components/DefaultLink/index";
+
 export default function Home() {
   return (
     <div data-testid="casa">
@@ -11,6 +13,11 @@ export default function Home() {
         type="website"
         shouldIndexPage
       />
+      <DefaultLink
+        href="https://nextjs.org/docs/api-reference/next/link"
+        titleAccessibility="Documentação">
+        Next.js Documentation
+      </DefaultLink>
     </div>
   );
 }
