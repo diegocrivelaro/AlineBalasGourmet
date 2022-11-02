@@ -6,12 +6,15 @@ export default function DefaultLink({
   href,
   titleAccessibility = `Link para ${href}`,
   hasPrefetch = false,
+  cnLink,
   children,
   ...rest
 }: DefaultLinkProps) {
   return (
     <Link href={href} prefetch={hasPrefetch} {...rest}>
-      <a title={titleAccessibility}>{children}</a>
+      <a className={cnLink} title={titleAccessibility}>
+        {children}
+      </a>
     </Link>
   );
 }
