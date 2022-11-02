@@ -3,7 +3,7 @@
     "scope": "javascript,typescript,typescriptreact",
     "prefix": "!nt",
     "body": [
-      "import { cleanup } from '@testing-library/react';",
+      "import { render, screen, cleanup } from '@testing-library/react';",
       "",
       "describe(`$1`, () => {",
       "  afterAll(() => {",
