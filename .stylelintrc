@@ -1,4 +1,5 @@
 {
+  "ignoreFiles": ["**/*.{js,jsx,ts,tsx}"],
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
   "rules": {
     "unit-allowed-list": ["rem", "%", "vw", "vh", "ms", "fr", "deg"]
