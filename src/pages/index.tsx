@@ -1,3 +1,4 @@
+import DefaultLogo from "@/components/DefaultLogo";
 import Layout from "@/components/Layout";
 import { companyNameNoSpaces } from "@/static/constants";
 
@@ -13,6 +14,7 @@ export default function Home() {
       type="website"
       shouldIndexPage>
       <h1>Header</h1>
+      <DefaultLogo />
     </Layout>
   );
 }
