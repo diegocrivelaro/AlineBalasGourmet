@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { companyName } from "@/static/constants";
+import { companyNameNoSpaces } from "@/static/constants";
 import { SEOProps } from "@/types/types";
 
 export default function SEO({
@@ -10,7 +10,7 @@ export default function SEO({
   type,
   shouldIndexPage,
 }: SEOProps) {
-  const pageTitle = `${companyName} | ${title}`;
+  const pageTitle = `${companyNameNoSpaces} | ${title}`;
   const pageImage = `${process.env.NEXT_PUBLIC_APPLICATION_WEB_LINK}/images/logo/AlineBalasGourmetOriginal.webp`;
   const pageUrlNoSlash = url.replace(/\/$/, ``);
   const themeColor = `#FFF9EF`;
@@ -30,7 +30,7 @@ export default function SEO({
       <link rel="canonical" href={pageUrlNoSlash} />
       <meta name="google" content="notranslate" />
 
-      <meta property="og:site_name" content={companyName} />
+      <meta property="og:site_name" content={companyNameNoSpaces} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:locale" content="pt_BR" />

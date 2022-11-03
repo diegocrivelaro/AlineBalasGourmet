@@ -6,6 +6,10 @@ export interface SEOProps {
   shouldIndexPage: boolean;
 }
 
+export interface LayoutProps extends SEOProps {
+  children: React.ReactNode;
+}
+
 export interface DefaultLinkProps {
   href: string;
   titleAccessibility?: string;

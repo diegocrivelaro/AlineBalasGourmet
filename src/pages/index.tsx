@@ -1,23 +1,18 @@
-import SEO from "@/components/SEO";
-
-import DefaultLink from "../components/DefaultLink/index";
+import Layout from "@/components/Layout";
+import { companyNameNoSpaces, domainLink } from "@/static/constants";
 
 export default function Home() {
+  const title = `Home`;
+  const description = `A ${companyNameNoSpaces} é uma empresa especializada em balas de coco gourmet. Todas balas são feitas com amor! \u2764\uFE0F`;
+
   return (
-    <div data-testid="casa">
-      <h1>Home - Página Inicial</h1>
-      <SEO
-        title="Home"
-        description="As melhores balas de coco do Brasil! Feitas com todo carinho e dedicação para você!"
-        url="https://www.alinebalasgourmet.com.br/"
-        type="website"
-        shouldIndexPage
-      />
-      <DefaultLink
-        href="https://nextjs.org/docs/api-reference/next/link"
-        titleAccessibility="Documentação">
-        Next.js Documentation
-      </DefaultLink>
-    </div>
+    <Layout
+      title={title}
+      description={description}
+      url={domainLink}
+      type="website"
+      shouldIndexPage>
+      <h1>Header</h1>
+    </Layout>
   );
 }
