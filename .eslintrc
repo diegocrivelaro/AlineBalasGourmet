@@ -40,6 +40,7 @@
     "quotes": ["warn", "backtick"],
     "semi": ["error", "always"],
     "no-plusplus": "off",
+    "arrow-parens": ["error", "as-needed"],
     "operator-linebreak": ["error", "after"],
     "object-curly-newline": ["error", { "multiline": true }],
     "react/no-danger": "warn",
