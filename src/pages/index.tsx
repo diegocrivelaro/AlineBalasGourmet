@@ -1,6 +1,7 @@
-import DefaultLogo from "@/components/DefaultLogo";
+import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import { companyNameNoSpaces } from "@/static/constants";
+import styles from "@/styles/home.module.css";
 
 export default function Home() {
   const title = `Balas de coco com amor e carinho`;
@@ -13,8 +14,9 @@ export default function Home() {
       url={process.env.NEXT_PUBLIC_APPLICATION_WEB_LINK}
       type="website"
       shouldIndexPage>
-      <h1>Header</h1>
-      <DefaultLogo />
+      <main className={styles.mainHomeContainer}>
+        <Header />
+      </main>
     </Layout>
   );
 }
