@@ -1,0 +1,26 @@
+.headerContainer {
+  max-width: 144rem;
+  height: 7.2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerMenu {
+  display: flex;
+  column-gap: 1.6rem;
+}
+
+.headerMenuLink {
+  font-family: Comfortaa, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brow-50);
+  animation: all 40s ease;
+}
+
+.headerMenuLink:hover {
+  color: var(--rosy-red-25);
+  border-bottom: 2px solid var(--rosy-red-25);
+}
