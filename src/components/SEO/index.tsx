@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { companyName } from "@/static/constants";
-import { SEOProps } from "@/types/types";
+import { SEOProps } from "@/types/SEOProps";
 
 export default function SEO({
   title,

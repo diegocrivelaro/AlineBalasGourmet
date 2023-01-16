@@ -9,11 +9,3 @@ export interface SEOProps {
 export interface LayoutProps extends SEOProps {
   children: React.ReactNode;
 }
-
-export interface DefaultLinkProps {
-  href: string;
-  titleAccessibility?: string;
-  hasPrefetch?: boolean;
-  cnLink?: string;
-  children: React.ReactNode;
-}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { DefaultLinkProps } from "@/types/types";
+import { DefaultLinkProps } from "@/types/DefaultLinkProps";
 
 export default function DefaultLink({
   href,

@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import { LayoutProps } from "@/types/types";
+import { LayoutProps } from "@/types/SEOProps";
 
 export default function Layout({
   title,
