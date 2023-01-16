@@ -7,9 +7,44 @@
   justify-content: space-between;
 }
 
+.headerNavContainer {
+  height: auto;
+}
+
+.headerNavContainer::after {
+  content: "";
+  width: 40%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0 0 0 / 0.4);
+  backdrop-filter: blur(1px);
+}
+
+.openMenuContainer {
+  width: 60%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--brow-5);
+}
+
+.openMenu {
+  margin: 2.2rem 1.4rem 0 2.6rem;
+}
+
 .headerMenu {
   display: flex;
-  column-gap: 1.6rem;
+  margin-top: 2.8rem;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.headerIconMenuHamburguer {
+  color: var(--brow-50);
+  cursor: pointer;
 }
 
 .headerMenuLink {

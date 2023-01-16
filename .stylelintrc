@@ -3,6 +3,7 @@
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
   "rules": {
     "unit-allowed-list": ["px", "rem", "%", "vw", "vh", "ms", "s", "fr", "deg"],
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "alpha-value-notation": "number"
   }
 }
