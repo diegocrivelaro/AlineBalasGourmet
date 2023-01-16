@@ -1,4 +1,4 @@
-import DefaultLink from "@/components/DefaultLink";
+import DefaultLink from "@/components/DefaultComponents/DefaultLink";
 import { companyName } from "@/static/constants";
 
 import styles from "./styles.module.css";

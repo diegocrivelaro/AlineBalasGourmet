@@ -1,5 +1,5 @@
-import DefaultLink from "@/components/DefaultLink";
-import DefaultLogo from "@/components/DefaultLogo";
+import DefaultLink from "@/components/DefaultComponents/DefaultLink";
+import DefaultLogo from "@/components/DefaultComponents/DefaultLogo";
 import { headerNavLinks } from "@/static/constants";
 
 import styles from "./styles.module.css";
