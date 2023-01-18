@@ -17,30 +17,32 @@ function Header() {
 
       <nav className={styles.headerNavContainer}>
         {menuHamburguer ? (
-          <section className={styles.openMenuContainer}>
-            <div className={styles.openMenu}>
-              <Image
-                src="/images/icons/closeIcon.svg"
-                width={34}
-                height={34}
-                alt="Fechar menu de navegação"
-                aria-label="Botão para fechar o menu de navegação"
-                title="Fechará o menu de navegação"
-                onClick={() => setMenuHamburguer(false)}
-              />
+          <section className={styles.menuMobileContainer}>
+            <div className={styles.menuMobileBackground}>
+              <div className={styles.menuMobileContent}>
+                <Image
+                  src="/images/icons/closeIcon.svg"
+                  width={34}
+                  height={34}
+                  alt="Fechar menu de navegação"
+                  aria-label="Botão para fechar o menu de navegação"
+                  title="Fechará o menu de navegação"
+                  onClick={() => setMenuHamburguer(false)}
+                />
 
-              <ol className={styles.headerMenu}>
-                {headerNavLinks.map(navigationLink => (
-                  <li key={navigationLink.title}>
-                    <DefaultLink
-                      href={navigationLink.path}
-                      titleAccessibility={navigationLink.title}
-                      cnLink={styles.headerMenuLink}>
-                      {navigationLink.name}
-                    </DefaultLink>
-                  </li>
-                ))}
-              </ol>
+                <ol className={styles.headerMenu}>
+                  {headerNavLinks.map(navigationLink => (
+                    <li key={navigationLink.title}>
+                      <DefaultLink
+                        href={navigationLink.path}
+                        titleAccessibility={navigationLink.title}
+                        cnLink={styles.headerMenuLink}>
+                        {navigationLink.name}
+                      </DefaultLink>
+                    </li>
+                  ))}
+                </ol>
+              </div>
             </div>
           </section>
         ) : (
