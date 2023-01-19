@@ -12,7 +12,7 @@ export default function SEO({
 }: SEOProps) {
   const pageTitle = `${companyName} | ${title}`;
   const pageImage = `${url}/images/logo/AlineBalasGourmetOriginal.webp`;
-  const pageUrlNoSlash = url.replace(/\/$/, ``);
+  const pageUrlNoSlash = url?.replace(/\/$/, ``);
   const themeColor = `#FFF9EF`;
 
   return (
