@@ -15,3 +15,53 @@
   position: relative;
   margin: 2.2rem 1.4rem 0 2.6rem;
 }
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2.6rem;
+  }
+
+  .headerNavContainer {
+    width: 65%;
+  }
+
+  .headerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1.4rem;
+  }
+
+  .headerMenuLink {
+    font-family: Comfortaa, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--brow-50);
+    animation: all 40s ease;
+  }
+
+  .headerMenuLink:hover {
+    color: var(--rosy-red-25);
+    border-bottom: 2px solid var(--rosy-red-25);
+  }
+}
+
+@media (min-width: 820px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .headerNavContainer {
+    width: 66%;
+  }
+
+  .headerMenu {
+    column-gap: 1.4rem;
+  }
+
+  .headerMenuLink {
+    font-size: 1.6rem;
+  }
+}
+
+/* TODO: Finalizar a responsividade para Desktop */
