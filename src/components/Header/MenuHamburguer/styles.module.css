@@ -1,0 +1,54 @@
+.menuMobileContainer::after {
+  content: "";
+  width: 40%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0 0 0 / 0.4);
+  backdrop-filter: blur(0.1rem);
+}
+
+.menuMobileBackground {
+  width: 60%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--brow-5);
+}
+
+.menuMobileContent {
+  margin: 8.4rem 2.6rem 0;
+}
+
+.menuMobileContent > span {
+  position: absolute !important;
+  top: 2.2rem;
+  right: 1.6rem;
+  cursor: pointer;
+}
+
+.headerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.headerMenuLink {
+  font-family: Comfortaa, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brow-50);
+  animation: all 40s ease;
+}
+
+.headerMenuLink:hover {
+  color: var(--rosy-red-25);
+  border-bottom: 2px solid var(--rosy-red-25);
+}
+
+.headerIconMenuHamburguer {
+  color: var(--brow-50);
+  cursor: pointer;
+}
