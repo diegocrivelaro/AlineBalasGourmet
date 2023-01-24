@@ -1,13 +1,28 @@
-.headerContainer {
-  max-width: 144rem;
+.header {
+  width: 100vw;
   height: 7.2rem;
+  padding: 0 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--brow-5);
+}
+
+.headerContent {
+  max-width: 144rem;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo {
+  font-size: 3rem;
+}
+
 .headerNavContainer {
+  width: auto;
   height: auto;
 }
 
@@ -16,13 +31,19 @@
   margin: 2.2rem 1.4rem 0 2.6rem;
 }
 
+@media (min-width: 360px) {
+  .header {
+    padding: 0 2.4rem;
+  }
+}
+
 @media (min-width: 768px) {
-  .logo {
-    font-size: 2.6rem;
+  .header {
+    padding: 0 1.6rem;
   }
 
-  .headerNavContainer {
-    width: 65%;
+  .logo {
+    font-size: 2.6rem;
   }
 
   .headerMenu {
@@ -37,12 +58,23 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--brow-50);
-    animation: all 40s ease;
+    transition-property: all;
+    transition-duration: 0.6s;
   }
 
   .headerMenuLink:hover {
     color: var(--rosy-red-25);
-    border-bottom: 2px solid var(--rosy-red-25);
+  }
+
+  .headerMenuLink:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    position: relative;
+    bottom: -1.8rem;
+    background-color: var(--rosy-red-25);
+    border-radius: 0.4rem;
   }
 }
 
@@ -51,17 +83,21 @@
     font-size: 3rem;
   }
 
-  .headerNavContainer {
-    width: 66%;
-  }
-
-  .headerMenu {
-    column-gap: 1.4rem;
-  }
-
   .headerMenuLink {
     font-size: 1.6rem;
   }
 }
 
-/* TODO: Finalizar a responsividade para Desktop */
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 3.2rem;
+  }
+
+  .headerMenu {
+    column-gap: 1.8rem;
+  }
+
+  .headerMenuLink {
+    font-size: 1.8rem;
+  }
+}
