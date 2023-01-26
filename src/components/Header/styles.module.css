@@ -59,7 +59,7 @@
     font-weight: 700;
     color: var(--brow-50);
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.4s;
   }
 
   .headerMenuLink:hover {
