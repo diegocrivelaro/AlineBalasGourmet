@@ -2,7 +2,7 @@ import { render, screen, cleanup } from "@testing-library/react";
 
 import DefaultLink from "..";
 
-describe(`DefaultLink - General`, () => {
+describe(`DefaultLink`, () => {
   afterAll(() => {
     jest.clearAllMocks();
   });
@@ -29,6 +29,9 @@ describe(`DefaultLink - General`, () => {
   test(`Check if DefaultLink has titleAccessibility prop`, () => {
     render(<DefaultLink {...mockProps}>Mocked Children</DefaultLink>);
 
-    expect(screen.getByTitle(`Mocked title accessibility`)).toBeInTheDocument();
+    expect(screen.getByRole(`link`)).toHaveAttribute(
+      `title`,
+      `Mocked title accessibility`,
+    );
   });
 });
