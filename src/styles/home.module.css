@@ -1,0 +1,6 @@
+.genericDivider {
+  width: 100vw;
+  height: 0.2rem;
+  background-color: var(--brow-50);
+  margin-top: 7.2rem;
+}

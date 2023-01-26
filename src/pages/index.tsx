@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import { companyNameNoSpaces } from "@/static/constants";
+import styles from "@/styles/home.module.css";
 
 export default function Home() {
   const title = `Balas de coco com amor e carinho`;
@@ -15,6 +16,7 @@ export default function Home() {
       shouldIndexPage>
       <main>
         <Header />
+        <hr className={styles.genericDivider} />
       </main>
     </Layout>
   );
