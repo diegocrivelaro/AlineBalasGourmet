@@ -19,7 +19,7 @@ function MenuHamburguer() {
             width={34}
             height={34}
             alt="Fechar menu de navegação"
-            aria-label="Botão para fechar o menu de navegação"
+            aria-describedby="Botão para fechar o menu de navegação"
             title="Fechará o menu de navegação"
             onClick={() => setMenuHamburguer(false)}
           />
@@ -45,7 +45,7 @@ function MenuHamburguer() {
       width={28}
       height={28}
       alt="Abrir menu de navegação"
-      aria-label="Botão para abrir o menu de navegação"
+      aria-describedby="Botão para abrir o menu de navegação"
       title="Abrirá o menu de navegação"
       className={styles.headerIconMenuHamburguer}
       onClick={() => setMenuHamburguer(true)}
