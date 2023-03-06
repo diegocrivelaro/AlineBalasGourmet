@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { companyName } from "@/static/constants";
-import { SEOProps } from "@/types/types";
+import { SEOProps } from "@/types/SEOProps";
 
 export default function SEO({
   title,
@@ -11,8 +11,8 @@ export default function SEO({
   shouldIndexPage,
 }: SEOProps) {
   const pageTitle = `${companyName} | ${title}`;
-  const pageImage = `${process.env.NEXT_PUBLIC_APPLICATION_WEB_LINK}/images/logo/AlineBalasGourmetOriginal.webp`;
-  const pageUrlNoSlash = url.replace(/\/$/, ``);
+  const pageImage = `${url}/images/logo/AlineBalasGourmetOriginal.webp`;
+  const pageUrlNoSlash = url?.replace(/\/$/, ``);
   const themeColor = `#FFF9EF`;
 
   return (

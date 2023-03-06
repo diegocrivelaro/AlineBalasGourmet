@@ -5,3 +5,7 @@ export interface SEOProps {
   type: string;
   shouldIndexPage: boolean;
 }
+
+export interface LayoutProps extends SEOProps {
+  children: React.ReactNode;
+}
