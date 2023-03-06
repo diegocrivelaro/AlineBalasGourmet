@@ -11,10 +11,13 @@ export default function DefaultLink({
   ...rest
 }: DefaultLinkProps) {
   return (
-    <Link href={href} prefetch={hasPrefetch} {...rest}>
-      <a className={cnLink} title={titleAccessibility}>
-        {children}
-      </a>
+    <Link
+      href={href}
+      title={titleAccessibility}
+      prefetch={hasPrefetch}
+      {...rest}
+      className={cnLink}>
+      {children}
     </Link>
   );
 }
