@@ -72,11 +72,15 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          "/^next/",
           "/^react/",
+          "/^next/",
+          "/@next/",
           "module",
+          "/^@/components/",
+          "/^@/styles/",
+          "/^@/types/",
+          "/^@/utils/",
           "/^@/",
-          "/^@shared/",
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
