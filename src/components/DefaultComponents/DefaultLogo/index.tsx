@@ -1,12 +1,16 @@
+import { memo } from "react";
+
 import cn from "classnames";
 
 import DefaultLink from "@/components/DefaultComponents/DefaultLink";
-import { companyName } from "@/static/constants";
+
 import { DefaultLogoProps } from "@/types/DefaultLogoProps";
+
+import { companyName } from "@/static/constants";
 
 import styles from "./styles.module.css";
 
-export default function DefaultLogo({ defaultLogoModifier }: DefaultLogoProps) {
+function DefaultLogo({ defaultLogoModifier }: DefaultLogoProps) {
   return (
     <DefaultLink
       href="/"
@@ -17,3 +21,5 @@ export default function DefaultLogo({ defaultLogoModifier }: DefaultLogoProps) {
     </DefaultLink>
   );
 }
+
+export default memo(DefaultLogo);
