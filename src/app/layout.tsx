@@ -3,17 +3,15 @@ import "@/styles/globals.css";
 
 import { ReactNode } from "react";
 
+import { dancingScript, comfortaa, poppins } from "@/utils/fonts";
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
-
-      <noscript>
-        <h1>
-          <strong> Aline Balas Gourmet não funciona sem JavaScript!</strong>
-        </h1>
-        <p>Por favor, habilite o JavaScript em seu navegador!</p>
-      </noscript>
+      <body
+        className={`${dancingScript.variable} ${comfortaa.variable} ${poppins.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
