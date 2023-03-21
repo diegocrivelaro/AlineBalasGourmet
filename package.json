@@ -20,10 +20,10 @@
     "test": "jest",
     "testWth": "jest --watch",
     "test::ci": "jest --ci",
-    "commit": "git-cz",
+    "commit": "echo \"[🌀] Executando o lint-staged\" && echo \"[🌀] Executando o lint:fix direto do lint-staged\" && echo \"[🌀] Executando o stylelint direto do lint-staged\" && echo \"[🌀] Executando o prettier direto do lint-staged\" && yarn lint-staged && echo \"[✅] Lint-staged executado com sucesso! 🎉\" && git-cz",
     "prettier": "prettier --write .",
     "commit-msg": "echo \"[🌀] Executando o commitlint\" && npx --no -- commitlint --edit && echo \"[✅] Commitlint executado com sucesso! 🎉\"",
-    "pre-commit": "echo \"[🌀] Executando o lint-staged\" && echo \"[🌀] Executando o lint:fix direto do lint-staged\" && echo \"[🌀] Executando o stylelint direto do lint-staged\" && echo \"[🌀] Executando o prettier direto do lint-staged\" && yarn lint-staged && echo \"[✅] Lint-staged executado com sucesso! 🎉\""
+    "pre-push": "echo \"[🌀] Executando o Lint\" && yarn lint && echo \"[🌀] Executando o Stylelint\" && yarn stylelint && echo \"[🌀] Executando o TypeCheck\" && yarn type-check && echo \"[🌀] Executando os Testes Unitários\" && yarn test"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
