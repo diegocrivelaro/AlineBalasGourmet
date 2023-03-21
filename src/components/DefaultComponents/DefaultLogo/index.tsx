@@ -4,11 +4,13 @@ import cn from "classnames";
 
 import DefaultLink from "@/components/DefaultComponents/DefaultLink";
 
-import { DefaultLogoProps } from "@/types/DefaultLogoProps";
-
 import { companyName } from "@/static/constants";
 
 import styles from "./styles.module.css";
+
+interface DefaultLogoProps {
+  defaultLogoModifier?: string;
+}
 
 function DefaultLogo({ defaultLogoModifier }: DefaultLogoProps) {
   return (

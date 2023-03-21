@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { useWindowSizeProps } from "@/types/useWindowSizeProps";
+import { useWindowSizeProps } from "@/types/hooks";
 
 export default function useWindowSize() {
   const [size, setSize] = useState<useWindowSizeProps>({ width: 0, height: 0 });
