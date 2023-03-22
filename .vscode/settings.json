@@ -1,5 +1,4 @@
 {
-  // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -8,17 +7,6 @@
     "source.fixAll.format": true,
     "source.organizeImports.eslint": true
   },
-
-  // Spell Checker
-  "cSpell.words": [
-    "Aline",
-    "aqui",
-    "Balas",
-    "cardápio",
-    "Chocolate",
-    "contato",
-    "Gourmet",
-    "página",
-    "seção"
-  ]
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

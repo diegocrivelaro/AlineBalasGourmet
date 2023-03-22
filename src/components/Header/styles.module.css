@@ -54,7 +54,7 @@
   }
 
   .headerMenuLink {
-    font-family: Comfortaa, sans-serif;
+    font-family: var(--comfortaa-font);
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--brow-50);

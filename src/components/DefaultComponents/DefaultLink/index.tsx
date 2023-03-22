@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-import { DefaultLinkProps } from "@/types/DefaultLinkProps";
+export interface DefaultLinkProps {
+  href: string;
+  titleAccessibility?: string;
+  hasPrefetch?: boolean;
+  cnLink?: string;
+  children: React.ReactNode;
+}
 
 export default function DefaultLink({
   href,
@@ -11,10 +17,13 @@ export default function DefaultLink({
   ...rest
 }: DefaultLinkProps) {
   return (
-    <Link href={href} prefetch={hasPrefetch} {...rest}>
-      <a className={cnLink} title={titleAccessibility}>
-        {children}
-      </a>
+    <Link
+      href={href}
+      title={titleAccessibility}
+      prefetch={hasPrefetch}
+      {...rest}
+      className={cnLink}>
+      {children}
     </Link>
   );
 }

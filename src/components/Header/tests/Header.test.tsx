@@ -13,6 +13,7 @@ describe(`Header`, () => {
   });
 
   test(`Check if the hamburger menu is showing on devices with a width equal to 768px`, () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const customGlobal: any = global;
     customGlobal.innerWidth = 768;
 
@@ -24,6 +25,7 @@ describe(`Header`, () => {
   });
 
   test(`Check if the hamburger menu is showing on devices with a width less than 768px`, () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const customGlobal: any = global;
     customGlobal.innerWidth = 320;
 
@@ -35,6 +37,7 @@ describe(`Header`, () => {
   });
 
   test(`Check that the hamburger menu is not showing on devices with a width greater than 768px`, () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const customGlobal: any = global;
     customGlobal.innerWidth = 1024;
 

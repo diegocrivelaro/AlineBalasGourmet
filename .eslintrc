@@ -50,6 +50,7 @@
     ],
     "react/no-danger": "warn",
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-closing-bracket-location": "off",
     "react/jsx-filename-extension": [
@@ -72,11 +73,15 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          "/^next/",
           "/^react/",
+          "/^next/",
+          "/@next/",
           "module",
+          "/^@/components/",
+          "/^@/styles/",
+          "/^@/types/",
+          "/^@/utils/",
           "/^@/",
-          "/^@shared/",
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }

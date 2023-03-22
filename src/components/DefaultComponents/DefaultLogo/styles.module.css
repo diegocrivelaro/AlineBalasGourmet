@@ -1,5 +1,5 @@
 .defaultLogo {
-  font-family: "Dancing Script", cursive;
+  font-family: var(--dancingscript-font);
   font-weight: 700;
   letter-spacing: 0.02rem;
   color: var(--rosy-red-50);

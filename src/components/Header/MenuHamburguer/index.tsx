@@ -1,8 +1,11 @@
-import Image from "next/image";
+"use client";
 
 import React, { useState } from "react";
 
+import Image from "next/image";
+
 import DefaultLink from "@/components/DefaultComponents/DefaultLink";
+
 import { headerNavLinks } from "@/static/constants";
 
 import styles from "./styles.module.css";
