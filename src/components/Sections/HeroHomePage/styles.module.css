@@ -1,0 +1,31 @@
+.heroHomePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.4rem;
+  margin: 3.4rem 0 6rem;
+}
+
+.heroHomePageContent {
+  margin: 1.4rem 0 3.4rem;
+  width: 84%;
+}
+
+.heroHomePageTitle {
+  font-family: var(--comfortaa-font);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  color: var(--brow-50);
+}
+
+.heroHomePageDescription {
+  font-family: var(--poppins-font);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  color: var(--grey-15);
+}
