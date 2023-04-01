@@ -1,4 +1,5 @@
 .homeContainer {
+  padding: 0 2.4rem;
   background-color: var(--brow-5);
 }
 
@@ -7,4 +8,10 @@
   height: 0.2rem;
   background-color: var(--brow-50);
   margin-top: 7.2rem;
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+    padding: 0 1.6rem;
+  }
 }
