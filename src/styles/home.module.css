@@ -1,3 +1,7 @@
+.homeContainer {
+  background-color: var(--brow-5);
+}
+
 .genericDivider {
   width: 100vw;
   height: 0.2rem;

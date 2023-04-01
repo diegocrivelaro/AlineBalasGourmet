@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.homeContainer}>
       <Header />
       <hr className={styles.genericDivider} />
     </main>
