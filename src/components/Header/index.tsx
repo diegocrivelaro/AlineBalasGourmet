@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import Link from "next/link";
+
 import DefaultLogo from "@/components/DefaultComponents/DefaultLogo";
 
 import useWindowSize from "@/hooks/useWindowSize";
@@ -9,7 +11,6 @@ import { headerNavLinks } from "@/static/constants";
 
 import MenuHamburguer from "./MenuHamburguer";
 import styles from "./styles.module.css";
-import Link from "next/link";
 
 function Header() {
   const { width } = useWindowSize();
