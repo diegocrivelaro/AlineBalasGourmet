@@ -1,6 +1,6 @@
 {
   "newTest": {
-    "scope": "javascript,typescript,typescriptreact",
+    "scope": "typescript,typescriptreact",
     "prefix": "!nt",
     "body": [
       "import { render, screen, cleanup } from '@testing-library/react';",
@@ -20,5 +20,23 @@
       ""
     ],
     "description": "Snippet to create the basis of a test 🧪"
+  },
+  "newComponent": {
+    "prefix": "!nc",
+    "scope": "typescriptreact",
+    "body": [
+      "import { memo } from \"react\"",
+      "",
+      "import styles from \"./styles.module.css\"",
+      "",
+      "function $1 () {",
+      "  return (",
+      "",
+      "  )",
+      "}",
+      "",
+      "export default memo($2)"
+    ],
+    "description": "Snippet to create the base of the component 🧩"
   }
 }
