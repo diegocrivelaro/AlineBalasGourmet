@@ -29,3 +29,25 @@
   text-align: center;
   color: var(--grey-15);
 }
+
+.heroHomePageButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20rem;
+  height: 5.2rem;
+  background-color: var(--rosy-red-50);
+}
+
+.heroHomePageButton {
+  font-family: var(--poppins-font);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+}
+
+.heroHomePageBullet {
+  width: 3.4rem;
+  height: 3.4rem;
+}
