@@ -7,10 +7,10 @@ import Image from "next/image";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import styles from "./styles.module.css";
-
 import "swiper/css";
 import "swiper/css/pagination";
+
+import styles from "./styles.module.css";
 
 interface SliderProps {
   sliderItems: {

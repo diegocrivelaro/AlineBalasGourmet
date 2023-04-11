@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import Slider from "@/components/DefaultComponents/Slider";
+import Slider from "@/components/HeroSliderHomePage/Slider";
 
 import { sliderItems } from "@/static/constants";
 
