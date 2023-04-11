@@ -24,21 +24,18 @@ function Slider({ sliderItems }: SliderProps) {
   return (
     <div className={styles.sliderContainer}>
       <Swiper pagination modules={[Pagination]}>
-        {sliderItems.map(item => {
-          const hasCrypto = typeof crypto !== `undefined` && crypto;
-
-          return (
-            <SwiperSlide key={hasCrypto.randomUUID()}>
-              <Image
-                src={item.src}
-                alt={item.alt}
-                title={item.title}
-                width={100}
-                height={100}
-              />
-            </SwiperSlide>
-          );
-        })}
+        {sliderItems.map(item => (
+          <SwiperSlide
+            key={typeof crypto !== `undefined` && crypto.randomUUID()}>
+            <Image
+              src={item.src}
+              alt={item.alt}
+              title={item.title}
+              width={100}
+              height={100}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <style>
