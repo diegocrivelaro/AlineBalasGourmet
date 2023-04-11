@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import Link from "next/link";
 
 export interface DefaultLinkProps {
@@ -8,7 +10,7 @@ export interface DefaultLinkProps {
   children: React.ReactNode;
 }
 
-export default function DefaultLink({
+function DefaultLink({
   href,
   titleAccessibility = `Link para ${href}`,
   hasPrefetch = false,
@@ -27,3 +29,5 @@ export default function DefaultLink({
     </Link>
   );
 }
+
+export default memo(DefaultLink);
