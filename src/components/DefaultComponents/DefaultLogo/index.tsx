@@ -1,8 +1,8 @@
 import { memo } from "react";
 
-import cn from "classnames";
+import Link from "next/link";
 
-import DefaultLink from "@/components/DefaultComponents/DefaultLink";
+import cn from "classnames";
 
 import { companyName } from "@/static/constants";
 
@@ -14,13 +14,11 @@ interface DefaultLogoProps {
 
 function DefaultLogo({ defaultLogoModifier }: DefaultLogoProps) {
   return (
-    <DefaultLink
-      href="/"
-      titleAccessibility="Clique aqui para ir na página inicial">
+    <Link href="/" title="Clique aqui para ir na página inicial">
       <p className={cn(styles.defaultLogo, defaultLogoModifier)}>
         {companyName}
       </p>
-    </DefaultLink>
+    </Link>
   );
 }
 

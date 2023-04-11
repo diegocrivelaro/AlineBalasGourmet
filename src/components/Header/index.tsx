@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import DefaultLink from "@/components/DefaultComponents/DefaultLink";
 import DefaultLogo from "@/components/DefaultComponents/DefaultLogo";
 
 import useWindowSize from "@/hooks/useWindowSize";
@@ -10,6 +9,7 @@ import { headerNavLinks } from "@/static/constants";
 
 import MenuHamburguer from "./MenuHamburguer";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 function Header() {
   const { width } = useWindowSize();
@@ -26,12 +26,12 @@ function Header() {
             <ol className={styles.headerMenu}>
               {headerNavLinks.map(navigationLink => (
                 <li key={navigationLink.title}>
-                  <DefaultLink
+                  <Link
                     href={navigationLink.path}
-                    titleAccessibility={navigationLink.title}
-                    cnLink={styles.headerMenuLink}>
+                    title={navigationLink.title}
+                    className={styles.headerMenuLink}>
                     {navigationLink.name}
-                  </DefaultLink>
+                  </Link>
                 </li>
               ))}
             </ol>
