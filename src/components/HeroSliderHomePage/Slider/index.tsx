@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import styles from "./styles.module.css";
+import stylesGlobal from "./stylesGlobal";
 
 interface SliderProps {
   sliderItems: {
@@ -38,25 +39,7 @@ function Slider({ sliderItems }: SliderProps) {
         ))}
       </Swiper>
 
-      <style>
-        {`
-          .swiper {
-            width: 100%;
-            height: 100%;
-          }
-
-          .swiper-pagination-bullet {
-            padding: 0.6rem;
-            background-color: transparent;
-            border: 0.3rem solid var(--brow-25);
-            opacity: 1;
-          }
-
-          .swiper-pagination-bullet-active {
-            background-color: var(--brow-25);
-          }
-        `}
-      </style>
+      <style>{stylesGlobal}</style>
     </div>
   );
 }
