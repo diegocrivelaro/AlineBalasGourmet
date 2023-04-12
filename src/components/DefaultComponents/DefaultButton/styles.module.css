@@ -1,9 +1,10 @@
-.defaultButton {
-  border-radius: 1.2rem;
-}
-
 .defaultButtonContainer {
   position: relative;
+}
+
+.buttonContainer {
+  position: relative;
+  z-index: 2;
 }
 
 .containerBullet {
@@ -14,4 +15,5 @@
   position: absolute;
   top: -0.8rem;
   left: -1rem;
+  z-index: 1;
 }

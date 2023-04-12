@@ -7,7 +7,7 @@
 }
 
 .heroHomePageContent {
-  margin: 1.4rem 0 3.4rem;
+  margin: 1.4rem 0 2.6rem;
   width: 84%;
 }
 
@@ -32,10 +32,11 @@
 
 .heroHomePageButtonContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 20rem;
   height: 5.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
   background-color: var(--rosy-red-50);
 }
 

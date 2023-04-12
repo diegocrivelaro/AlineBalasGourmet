@@ -29,13 +29,15 @@ function DefaultButton({
   titleAccessibility,
 }: DefaultButtonProps) {
   return (
-    <div className={cn(styles.defaultButtonContainer, style.containerStyle)}>
-      <Link
-        href={href}
-        title={titleAccessibility}
-        className={cn(styles.defaultButton, style.buttonStyle)}>
-        {children}
-      </Link>
+    <div className={styles.defaultButtonContainer}>
+      <div className={cn(styles.buttonContainer, style.containerStyle)}>
+        <Link
+          href={href}
+          title={titleAccessibility}
+          className={cn(style.buttonStyle)}>
+          {children}
+        </Link>
+      </div>
 
       {hasBullet && (
         <div className={styles.containerBullet}>
