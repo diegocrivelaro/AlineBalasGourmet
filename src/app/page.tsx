@@ -14,8 +14,6 @@ export default function Home() {
     <main className={styles.homeContainer}>
       <Header />
 
-      <hr className={styles.genericDivider} />
-
       <HeroHomePage />
     </main>
   );

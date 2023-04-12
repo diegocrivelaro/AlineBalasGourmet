@@ -39,6 +39,8 @@ function Header() {
           )}
         </nav>
       </div>
+
+      <hr className={styles.genericDivider} />
     </header>
   );
 }

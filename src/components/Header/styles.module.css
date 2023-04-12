@@ -31,6 +31,16 @@
   margin: 2.2rem 1.4rem 0 2.6rem;
 }
 
+.genericDivider {
+  width: 100vw;
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 7.2rem;
+  background-color: var(--brow-50);
+}
+
 @media (min-width: 360px) {
   .header {
     padding: 0 2.4rem;
