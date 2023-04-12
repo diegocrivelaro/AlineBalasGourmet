@@ -32,6 +32,8 @@ function Slider({ sliderItems }: SliderProps) {
               src={item.src}
               alt={item.alt}
               title={item.title}
+              priority
+              unoptimized
               width={100}
               height={100}
             />
