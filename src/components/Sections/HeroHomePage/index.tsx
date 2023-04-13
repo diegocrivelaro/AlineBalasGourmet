@@ -15,20 +15,21 @@ function HeroHomePage() {
   return (
     <section className={styles.heroHomePageContainer}>
       <HeroSliderHomePage />
+
       <article className={styles.heroHomePageContent}>
         <h1 className={styles.heroHomePageTitle}>Balas para adoçar seu dia!</h1>
         <p className={styles.heroHomePageDescription}>
           Balas feitas com todo amor
         </p>
-      </article>
 
-      <DefaultButton
-        href="/cardapio"
-        titleAccessibility="Faça seu pedido agora!"
-        style={buttonStyles}
-        hasBullet>
-        Fazer pedido!
-      </DefaultButton>
+        <DefaultButton
+          href="/cardapio"
+          titleAccessibility="Faça seu pedido agora!"
+          style={buttonStyles}
+          hasBullet>
+          Fazer pedido!
+        </DefaultButton>
+      </article>
     </section>
   );
 }

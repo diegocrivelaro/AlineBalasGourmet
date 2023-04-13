@@ -17,3 +17,9 @@
   left: -1rem;
   z-index: 1;
 }
+
+@media (min-width: 768px) {
+  .containerBullet {
+    width: 108%;
+  }
+}

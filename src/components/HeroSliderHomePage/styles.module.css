@@ -4,3 +4,12 @@
   border: 0.2rem solid var(--brow-50);
   border-radius: 0.2rem;
 }
+
+@media (min-width: 768px) {
+  .heroSliderHomePageContainer {
+    max-width: 56.6rem;
+    width: 100%;
+    height: 45rem;
+    border-radius: 3.4rem;
+  }
+}
