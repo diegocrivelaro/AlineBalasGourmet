@@ -4,10 +4,11 @@ import { memo } from "react";
 
 import Image from "next/image";
 
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./styles.module.css";
@@ -24,7 +25,7 @@ interface SliderProps {
 function Slider({ sliderItems }: SliderProps) {
   return (
     <div className={styles.sliderContainer}>
-      <Swiper pagination modules={[Pagination]}>
+      <Swiper navigation pagination modules={[Navigation, Pagination]}>
         {sliderItems.map(item => (
           <SwiperSlide
             key={typeof crypto !== `undefined` && crypto.randomUUID()}>
