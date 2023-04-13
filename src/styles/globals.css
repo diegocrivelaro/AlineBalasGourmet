@@ -29,4 +29,5 @@ html {
 html,
 body {
   scroll-behavior: smooth;
+  background-color: var(--brow-5);
 }
