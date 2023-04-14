@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import HeroHomePage from "@/components/Sections/HeroHomePage";
 
 import styles from "@/styles/home.module.css";
 
@@ -10,9 +11,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.homeContainer}>
       <Header />
-      <hr className={styles.genericDivider} />
+
+      <HeroHomePage />
     </main>
   );
 }

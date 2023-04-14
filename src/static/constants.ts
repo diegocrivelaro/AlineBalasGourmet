@@ -37,3 +37,16 @@ export const headerNavLinks = [
     title: `Clique aqui para ir seção contato`,
   },
 ];
+
+export const sliderItems = [
+  {
+    src: `/images/logo/AlineBalasGourmetOriginal.webp`,
+    alt: `Logo da Aline Balas Gourmet`,
+    title: `Aline Balas Gourmet`,
+  },
+  {
+    src: `/images/slider/Slider2.jpg`,
+    alt: `Logo da Aline Balas Gourmet`,
+    title: `Aline Balas Gourmet`,
+  },
+];

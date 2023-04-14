@@ -1,0 +1,91 @@
+.heroHomePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.4rem;
+  margin: 10.6rem 0 6rem;
+}
+
+.heroHomePageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84%;
+  margin: 1.4rem 0 2.6rem;
+}
+
+.heroHomePageTitle {
+  font-family: var(--comfortaa-font);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  color: var(--brow-50);
+}
+
+.heroHomePageDescription {
+  margin: 0.8rem 0 1.6rem;
+  font-family: var(--poppins-font);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  color: var(--grey-15);
+}
+
+.heroHomePageButtonContainer {
+  display: flex;
+  width: 22.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  background-color: var(--rosy-red-50);
+}
+
+.heroHomePageButton {
+  padding: 1.2rem 5rem;
+  font-family: var(--poppins-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+}
+
+.heroHomePageBullet {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+@media (min-width: 768px) {
+  .heroHomePageContainer {
+    margin: 14.4rem 0 0;
+    padding: 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .heroHomePageContent {
+    width: 32.4rem;
+  }
+
+  .heroHomePageTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+  }
+
+  .heroHomePageDescription {
+    margin: 0.4rem 0 1.2rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .heroHomePageButtonContainer {
+    min-width: 24rem;
+  }
+
+  .heroHomePageButton {
+    line-height: 2.6rem;
+  }
+}

@@ -1,0 +1,25 @@
+.defaultButtonContainer {
+  position: relative;
+}
+
+.buttonContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.containerBullet {
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -0.8rem;
+  left: -1rem;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .containerBullet {
+    width: 108%;
+  }
+}

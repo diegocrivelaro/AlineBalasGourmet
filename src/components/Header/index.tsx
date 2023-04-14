@@ -2,7 +2,8 @@
 
 import React from "react";
 
-import DefaultLink from "@/components/DefaultComponents/DefaultLink";
+import Link from "next/link";
+
 import DefaultLogo from "@/components/DefaultComponents/DefaultLogo";
 
 import useWindowSize from "@/hooks/useWindowSize";
@@ -26,18 +27,20 @@ function Header() {
             <ol className={styles.headerMenu}>
               {headerNavLinks.map(navigationLink => (
                 <li key={navigationLink.title}>
-                  <DefaultLink
+                  <Link
                     href={navigationLink.path}
-                    titleAccessibility={navigationLink.title}
-                    cnLink={styles.headerMenuLink}>
+                    title={navigationLink.title}
+                    className={styles.headerMenuLink}>
                     {navigationLink.name}
-                  </DefaultLink>
+                  </Link>
                 </li>
               ))}
             </ol>
           )}
         </nav>
       </div>
+
+      <hr className={styles.genericDivider} />
     </header>
   );
 }
