@@ -1,3 +1,4 @@
+import Divider from "@/components/Divider";
 import CandyMenu from "@/components/Sections/CandyMenu";
 import HeroHomePage from "@/components/Sections/HeroHomePage";
 
@@ -13,6 +14,10 @@ export default function Home() {
   return (
     <main className={styles.homeContainer}>
       <HeroHomePage />
+
+      <Divider />
+
+      <CandyMenu />
     </main>
   );
 }
