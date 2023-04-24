@@ -1,8 +1,17 @@
+import Image from "next/image";
+
+import DefaultButton from "@/components/DefaultComponents/DefaultButton";
 import PictureFrame from "@/components/PictureFrame";
 
 import styles from "./styles.module.css";
 
 function CandyMenu() {
+  const buttonStyles = {
+    containerStyle: styles.candyMenuButtonContainer,
+    buttonStyle: styles.candyMenuButton,
+    bulletStyle: styles.candyMenuBullet,
+  };
+
   return (
     <section className={styles.candyMenuContainer}>
       <PictureFrame
@@ -23,6 +32,20 @@ function CandyMenu() {
           {` `}
           para facilitar seu pedido!
         </p>
+
+        <DefaultButton
+          href="/cardapio"
+          titleAccessibility="Ver cardápio"
+          hasBullet
+          style={buttonStyles}>
+          <Image
+            src="/images/icons/menuIcon.svg"
+            alt="ícone para simbolizar um cardápio"
+            width={20}
+            height={20}
+          />
+          Cardápio
+        </DefaultButton>
       </div>
     </section>
   );
