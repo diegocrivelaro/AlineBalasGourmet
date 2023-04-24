@@ -30,19 +30,19 @@ function DefaultButton({
 }: DefaultButtonProps) {
   return (
     <div className={styles.defaultButtonContainer}>
-      <div className={cn(styles.buttonContainer, style.containerStyle)}>
+      <div className={cn(styles.buttonContainer, style?.containerStyle)}>
         <Link
           href={href}
           title={titleAccessibility}
-          className={cn(style.buttonStyle)}>
+          className={style?.buttonStyle}>
           {children}
         </Link>
       </div>
 
       {hasBullet && (
         <div className={styles.containerBullet}>
-          <BulletLeft width={100} height={100} style={style.bulletStyle} />
-          <BulletRight width={100} height={100} style={style.bulletStyle} />
+          <BulletLeft width={100} height={100} style={style?.bulletStyle} />
+          <BulletRight width={100} height={100} style={style?.bulletStyle} />
         </div>
       )}
     </div>
