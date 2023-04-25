@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 function CandyMenu() {
   const buttonStyles = {
-    containerStyle: styles.candyMenuButtonContainer,
+    buttonContainerStyle: styles.candyMenuButtonContainer,
     buttonStyle: styles.candyMenuButton,
     bulletStyle: styles.candyMenuBullet,
   };

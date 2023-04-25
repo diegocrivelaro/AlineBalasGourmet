@@ -14,7 +14,8 @@ interface DefaultButtonProps {
   children: ReactNode;
   hasBullet: boolean;
   style?: {
-    containerStyle?: string;
+    buttonContainerStyle?: string;
+    linkContainerStyle?: string;
     buttonStyle?: string;
     bulletStyle?: string;
   };
@@ -29,8 +30,12 @@ function DefaultButton({
   titleAccessibility,
 }: DefaultButtonProps) {
   return (
-    <div className={styles.defaultButtonContainer}>
-      <div className={cn(styles.buttonContainer, style?.containerStyle)}>
+    <div
+      className={cn(
+        styles.defaultButtonContainer,
+        style?.buttonContainerStyle,
+      )}>
+      <div className={cn(styles.buttonContainer, style?.linkContainerStyle)}>
         <Link
           href={href}
           title={titleAccessibility}
