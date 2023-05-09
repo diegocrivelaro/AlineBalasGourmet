@@ -1,23 +1,18 @@
-.candyMenuContainer {
-  display: flex;
-  margin: 11.2rem 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .candyMenuInformation {
-  max-width: 35rem;
+  padding: 0 var(--side-padding-for-mobile);
 }
 
 .candyMenuTitle {
+  width: 100%;
   font-family: var(--comfortaa-font);
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--brow-50);
 }
 
 .candyMenuDescription {
-  margin: 1.2rem 0 1.6rem;
+  width: 100%;
+  margin: 0.8rem 0 3.2rem var(--text-indent-distance);
   font-family: var(--poppins-font);
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -55,9 +50,28 @@
 }
 
 @media (min-width: 768px) {
+  .candyMenuContainer {
+    margin: 14.6rem 0 11.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .pictureFrameModifierContainer {
     display: inline-block;
     width: 50rem;
     height: 53.4rem;
+  }
+
+  .candyMenuInformation {
+    max-width: 35rem;
+  }
+
+  .candyMenuTitle {
+    font-size: 2.8rem;
+  }
+
+  .candyMenuDescription {
+    margin: 1.2rem 0 1.6rem;
   }
 }

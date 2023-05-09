@@ -14,6 +14,8 @@
   --green-45: #00e676;
   --grey-15: #766e6e;
   --max-width-components: 136rem;
+  --side-padding-for-mobile: 2.4rem;
+  --text-indent-distance: 1rem;
 }
 
 *,
