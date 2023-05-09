@@ -1,0 +1,78 @@
+.candyMenuInformation {
+  padding: 0 var(--side-padding-for-mobile);
+}
+
+.candyMenuTitle {
+  width: 100%;
+  font-family: var(--comfortaa-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--brow-50);
+}
+
+.candyMenuDescription {
+  width: 100%;
+  margin: 0.8rem 0 3.2rem var(--text-indent-distance);
+  font-family: var(--poppins-font);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.01rem;
+  color: var(--grey-15);
+}
+
+.candyMenuButtonContainer {
+  max-width: 19.6rem;
+  margin: 0 auto;
+}
+
+.candyMenuButton {
+  width: 19.6rem;
+  height: 5.6rem;
+  padding: 1.6rem 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--poppins-font);
+  font-size: 1.4rem;
+  color: var(--white);
+  border-radius: 1.2rem;
+  background-color: var(--rosy-red-50);
+}
+
+.candyMenuLinkContainer {
+  width: 50%;
+}
+
+.candyMenuBullet {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .candyMenuContainer {
+    margin: 14.6rem 0 11.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pictureFrameModifierContainer {
+    display: inline-block;
+    width: 50rem;
+    height: 53.4rem;
+  }
+
+  .candyMenuInformation {
+    max-width: 48rem;
+    padding: 0;
+  }
+
+  .candyMenuTitle {
+    font-size: 2.8rem;
+  }
+
+  .candyMenuDescription {
+    margin: 1.2rem 0 1.6rem;
+  }
+}

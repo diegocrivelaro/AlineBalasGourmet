@@ -14,7 +14,8 @@ interface DefaultButtonProps {
   children: ReactNode;
   hasBullet: boolean;
   style?: {
-    containerStyle?: string;
+    buttonContainerStyle?: string;
+    linkContainerStyle?: string;
     buttonStyle?: string;
     bulletStyle?: string;
   };
@@ -29,20 +30,24 @@ function DefaultButton({
   titleAccessibility,
 }: DefaultButtonProps) {
   return (
-    <div className={styles.defaultButtonContainer}>
-      <div className={cn(styles.buttonContainer, style.containerStyle)}>
+    <div
+      className={cn(
+        styles.defaultButtonContainer,
+        style?.buttonContainerStyle,
+      )}>
+      <div className={cn(styles.buttonContainer, style?.linkContainerStyle)}>
         <Link
           href={href}
           title={titleAccessibility}
-          className={cn(style.buttonStyle)}>
+          className={style?.buttonStyle}>
           {children}
         </Link>
       </div>
 
       {hasBullet && (
         <div className={styles.containerBullet}>
-          <BulletLeft width={100} height={100} style={style.bulletStyle} />
-          <BulletRight width={100} height={100} style={style.bulletStyle} />
+          <BulletLeft width={100} height={100} style={style?.bulletStyle} />
+          <BulletRight width={100} height={100} style={style?.bulletStyle} />
         </div>
       )}
     </div>

@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 function HeroHomePage() {
   const buttonStyles = {
-    containerStyle: styles.heroHomePageButtonContainer,
+    linkContainerStyle: styles.heroHomePageButtonContainer,
     buttonStyle: styles.heroHomePageButton,
     bulletStyle: styles.heroHomePageBullet,
   };
