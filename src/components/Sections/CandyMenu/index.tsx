@@ -1,11 +1,17 @@
+import { headers } from "next/headers";
 import Image from "next/image";
 
 import DefaultButton from "@/components/DefaultComponents/DefaultButton";
 import PictureFrame from "@/components/PictureFrame";
 
+import { isMobile } from "@/utils/helpers";
+
 import styles from "./styles.module.css";
 
-function CandyMenu() {
+async function CandyMenu() {
+  const header = headers();
+  const isMobileDevice = isMobile(header.get(`user-agent`));
+
   const buttonStyles = {
     buttonContainerStyle: styles.candyMenuButtonContainer,
     buttonStyle: styles.candyMenuButton,
@@ -14,13 +20,15 @@ function CandyMenu() {
 
   return (
     <section className={styles.candyMenuContainer}>
-      <PictureFrame
-        imagePath="/images/balasSequinhasRecheadas.webp"
-        altText="Cardápio físico no formato pdf"
-        style={styles.pictureFrameModifierContainer}
-        width={100}
-        height={100}
-      />
+      {!isMobileDevice && (
+        <PictureFrame
+          imagePath="/images/balasSequinhasRecheadas.webp"
+          altText="Cardápio físico no formato pdf"
+          style={styles.pictureFrameModifierContainer}
+          width={100}
+          height={100}
+        />
+      )}
 
       <div className={styles.candyMenuInformation}>
         <h2 className={styles.candyMenuTitle}>Cardápio de Doces</h2>
