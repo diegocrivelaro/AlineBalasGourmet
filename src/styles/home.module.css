@@ -1,10 +1,10 @@
 .homeContainer {
+  max-width: var(--max-width-components);
   background-color: var(--brow-5);
 }
 
 @media (min-width: 768px) {
   .homeContainer {
-    max-width: 136rem;
     margin: 0 auto;
     padding: 0 1.6rem;
   }
