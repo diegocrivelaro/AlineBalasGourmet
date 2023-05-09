@@ -8,7 +8,7 @@ import { isMobile } from "@/utils/helpers";
 
 import styles from "./styles.module.css";
 
-async function CandyMenu() {
+function CandyMenu() {
   const header = headers();
   const isMobileDevice = isMobile(header.get(`user-agent`));
 
