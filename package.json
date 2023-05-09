@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=18.16.x"
+    "node": ">=18.15.x"
   },
   "scripts": {
     "dev": "next dev",
