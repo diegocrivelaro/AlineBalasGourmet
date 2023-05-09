@@ -64,7 +64,8 @@
   }
 
   .candyMenuInformation {
-    max-width: 35rem;
+    max-width: 48rem;
+    padding: 0;
   }
 
   .candyMenuTitle {
