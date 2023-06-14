@@ -1,5 +1,11 @@
-# Tarefas
+# Detalhes
+
+## Tarefas
 
 - [ ]
 
-## Imagens
+## Regras de negócio
+
+-
+
+### Anexos
