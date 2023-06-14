@@ -10,8 +10,9 @@
   --pink-50: rgb(235 86 173);
   --pink-25: rgb(255 134 209);
   --pink-15: rgb(255 134 209);
-  --green-50: rgb(0 230 118);
+  --green-50: rgba(0 230 118 / 0.45);
   --green-45: rgba(0 230 118 / 0.75);
+  --green-35: rgb(0 230 118);
   --grey-15: rgb(118 110 110);
   --max-width-components: 136rem;
   --side-padding-for-mobile: 2.4rem;
