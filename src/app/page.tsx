@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import FloatWhatsAppBtn from "@/components/FloatWhatsAppBtn";
 import CandyMenu from "@/components/Sections/CandyMenu";
 import HeroHomePage from "@/components/Sections/HeroHomePage";
 
@@ -20,6 +21,8 @@ export default function Home() {
       <CandyMenu />
 
       <Divider />
+
+      <FloatWhatsAppBtn />
     </main>
   );
 }
