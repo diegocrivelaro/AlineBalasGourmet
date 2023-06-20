@@ -5,10 +5,10 @@ import HeroHomePage from "@/components/Sections/HeroHomePage";
 
 import styles from "@/styles/home.module.css";
 
-import { metadataIndex } from "@/static/metadata";
+import { metadataHome } from "@/static/metadata";
 
 export const metadata = {
-  ...metadataIndex,
+  ...metadataHome,
 };
 
 export default function Home() {
