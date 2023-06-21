@@ -26,6 +26,7 @@ export interface QuantityOptionsProps {
 }
 
 export interface FlavorsOptionsProps {
+  id: number;
   name: string;
   description: string | undefined;
   price: number;
@@ -38,6 +39,7 @@ export interface ColorOptionsProps {
 }
 
 export interface BulletsProps {
+  id: number;
   title: string;
   description: string | undefined;
   flavors: FlavorsOptionsProps[] | null;
