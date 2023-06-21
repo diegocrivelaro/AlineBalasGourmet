@@ -19,8 +19,6 @@ export type BattersOptionsProps =
   | `Nozes`
   | `Tradicional`;
 
-export type TypesOfColorsProps = `Verde` | `Azul`;
-
 export interface QuantityOptionsProps {
   type: TypesOfRecipesProps;
   quantity: number | undefined;
@@ -35,8 +33,8 @@ export interface FlavorsOptionsProps {
 }
 
 export interface ColorOptionsProps {
-  name: TypesOfColorsProps;
-  color: string;
+  name: string;
+  color: string | undefined;
 }
 
 export interface BulletsProps {
