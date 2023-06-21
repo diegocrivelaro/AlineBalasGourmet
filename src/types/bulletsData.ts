@@ -21,7 +21,8 @@ export type BattersOptionsProps =
 
 export interface QuantityOptionsProps {
   type: TypesOfRecipesProps;
-  quantity: number | undefined;
+  mass: string;
+  quantity: number;
   price: number | undefined;
 }
 
