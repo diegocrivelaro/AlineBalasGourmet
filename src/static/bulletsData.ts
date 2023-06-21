@@ -658,7 +658,92 @@ export const colorfulDryBullets: BulletsProps = {
       price: undefined,
     },
   ],
-  colorOptions: null,
+  colorOptions: [
+    {
+      name: `Amarelo Damasco`,
+      color: `#e4c100`,
+    },
+    {
+      name: `Amarelo Gema`,
+      color: `#eca000`,
+    },
+    {
+      name: `Azul Anis`,
+      color: `#008ede`,
+    },
+    {
+      name: `Azul Jeans`,
+      color: `#105cb6`,
+    },
+    {
+      name: `Branco Leite`,
+      color: `#e8e8e8`,
+    },
+    {
+      name: `Laranja`,
+      color: `#f48e00`,
+    },
+    {
+      name: `Marrom Chocolate`,
+      color: `#a24600`,
+    },
+    {
+      name: `Marrom`,
+      color: `#3f0a00`,
+    },
+    {
+      name: `Pink`,
+      color: `#d01467`,
+    },
+    {
+      name: `Preto Ameixa`,
+      color: `#050505`,
+    },
+    {
+      name: `Rosa Cereja`,
+      color: `#d9327a`,
+    },
+    {
+      name: `Roxo Batata`,
+      color: undefined,
+    },
+    {
+      name: `Salmão`,
+      color: `#d09530`,
+    },
+    {
+      name: `Verde Folha`,
+      color: `#41932a`,
+    },
+    {
+      name: `Verde Hortelã`,
+      color: `#00a32f`,
+    },
+    {
+      name: `Verde Limão`,
+      color: `#6fab0b`,
+    },
+    {
+      name: `Vermelho Morango`,
+      color: `#d01a13`,
+    },
+    {
+      name: `Vermelho Natal`,
+      color: `#a41621`,
+    },
+    {
+      name: `Vinho Bordô`,
+      color: `#900b4d`,
+    },
+    {
+      name: `Violeta`,
+      color: `#4823a8`,
+    },
+    {
+      name: `Preto Intenso`,
+      color: undefined,
+    },
+  ],
 };
 
 export const bullets: BulletsProps[] = [
