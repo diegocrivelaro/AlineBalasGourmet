@@ -60,11 +60,13 @@ const traditionalIcedBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 120,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500g`,
       quantity: 60,
       price: 48,
     },
@@ -132,11 +134,13 @@ const traditionalDryBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 220,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500g`,
       quantity: 110,
       price: 40,
     },
@@ -289,16 +293,19 @@ const stuffedIcedBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 120,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500`,
       quantity: 60,
       price: 74,
     },
     {
       type: `Receita inteira com 2 sabores diferentes`,
+      mass: `1Kg`,
       quantity: 120,
       price: 120,
     },
@@ -451,16 +458,19 @@ const stuffedDryBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 200,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500g`,
       quantity: 100,
       price: 74,
     },
     {
       type: `Receita inteira com 2 sabores diferentes`,
+      mass: `1Kg`,
       quantity: 200,
       price: 120,
     },
@@ -613,16 +623,19 @@ const stuffedCandyBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 120,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500g`,
       quantity: 60,
       price: 104,
     },
     {
       type: `Receita inteira com 2 sabores diferentes`,
+      mass: `1Kg`,
       quantity: 120,
       price: 150,
     },
@@ -690,16 +703,19 @@ const candyBulletsWithoutilling: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 120,
       price: undefined,
     },
     {
       type: `Meia receita`,
+      mass: `500g`,
       quantity: 60,
       price: 84,
     },
     {
       type: `Receita inteira com 2 sabores diferentes`,
+      mass: `1Kg`,
       quantity: 120,
       price: 130,
     },
@@ -739,6 +755,7 @@ export const colorfulDryBullets: BulletsProps = {
   quantityOptions: [
     {
       type: `Receita inteira`,
+      mass: `1Kg`,
       quantity: 220,
       price: undefined,
     },
