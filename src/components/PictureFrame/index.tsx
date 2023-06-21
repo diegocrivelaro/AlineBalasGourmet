@@ -4,11 +4,11 @@ import Image from "next/image";
 
 import cn from "classnames";
 
-import { widthHeightProps } from "@/types/generic";
+import { WidthHeightProps } from "@/types/generic";
 
 import styles from "./styles.module.css";
 
-interface PictureFrameProps extends widthHeightProps {
+interface PictureFrameProps extends WidthHeightProps {
   imagePath: string;
   altText: string;
   style: string;
