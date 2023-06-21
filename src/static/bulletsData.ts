@@ -1,8 +1,6 @@
 import { BulletsProps } from "@/types/bulletsData";
 
-export const bullets: BulletsProps[] = [];
-
-export const traditionalIcedBullets: BulletsProps = {
+const traditionalIcedBullets: BulletsProps = {
   title: `Balas Geladas Tradicionais`,
   description: `Balas de coco geladas tradicionais`,
   flavors: [
@@ -66,7 +64,7 @@ export const traditionalIcedBullets: BulletsProps = {
   colorOptions: null,
 };
 
-export const traditionalDryBullets: BulletsProps = {
+const traditionalDryBullets: BulletsProps = {
   title: `Balas Sequinhas Tradicionais`,
   description: `Balas de coco sequinhas tradicionais`,
   flavors: [
@@ -130,7 +128,7 @@ export const traditionalDryBullets: BulletsProps = {
   colorOptions: null,
 };
 
-export const stuffedIcedBullets: BulletsProps = {
+const stuffedIcedBullets: BulletsProps = {
   title: `Balas Geladas Recheadas`,
   description: `Balas de coco geladas recheadas`,
   flavors: [
@@ -273,7 +271,7 @@ export const stuffedIcedBullets: BulletsProps = {
   colorOptions: null,
 };
 
-export const stuffedDryBullets: BulletsProps = {
+const stuffedDryBullets: BulletsProps = {
   title: `Balas Sequinhas Recheadas`,
   description: `Balas de coco sequinhas recheadas`,
   flavors: [
@@ -416,9 +414,9 @@ export const stuffedDryBullets: BulletsProps = {
   colorOptions: null,
 };
 
-export const stuffedCandyBullets: BulletsProps = {
+const stuffedCandyBullets: BulletsProps = {
   title: `Balas de Bombom Recheadas`,
-  description: `Balas de coco de bombom`,
+  description: `Balas de coco de bombom recheadas`,
   flavors: [
     {
       name: `Bicho de pé (Brigadeiro de Morango)`,
@@ -538,7 +536,7 @@ export const stuffedCandyBullets: BulletsProps = {
     `Nozes`,
     `Tradicional`,
   ],
-  chocolates: null,
+  chocolates: [`Ao leite`, `Meio amargo`, `Blend (Amargo e Ao Leite)`],
   quantityOptions: [
     {
       type: `Receita inteira`,
@@ -558,3 +556,117 @@ export const stuffedCandyBullets: BulletsProps = {
   ],
   colorOptions: null,
 };
+
+const candyBulletsWithoutilling: BulletsProps = {
+  title: `Balas de Bombom S/Recheio`,
+  description: `Balas de coco de bombom sem recheio`,
+  flavors: [
+    {
+      name: `Amendoim`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Café`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Chocolate`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Limão`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Morango`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Nozes`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Tradicional`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+  ],
+  batters: null,
+  chocolates: [`Ao leite`, `Meio amargo`, `Blend (Amargo e Ao Leite)`],
+  quantityOptions: [
+    {
+      type: `Receita inteira`,
+      quantity: 120,
+      price: undefined,
+    },
+    {
+      type: `Meia receita`,
+      quantity: 60,
+      price: 84,
+    },
+    {
+      type: `Receita inteira com 2 sabores diferentes`,
+      quantity: 120,
+      price: 130,
+    },
+  ],
+  colorOptions: null,
+};
+
+export const colorfulDryBullets: BulletsProps = {
+  title: `Balas Sequinhas Coloridas`,
+  description: `Balas de coco sequinhas coloridas`,
+  flavors: [
+    {
+      name: `Amendoim`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Café`,
+      description: undefined,
+      price: 120,
+      medias: null,
+    },
+    {
+      name: `Tradicional`,
+      description: undefined,
+      price: 70,
+      medias: null,
+    },
+  ],
+  batters: null,
+  chocolates: null,
+  quantityOptions: [
+    {
+      type: `Receita inteira`,
+      quantity: 220,
+      price: undefined,
+    },
+  ],
+  colorOptions: null,
+};
+
+export const bullets: BulletsProps[] = [
+  traditionalIcedBullets,
+  traditionalDryBullets,
+  stuffedIcedBullets,
+  stuffedDryBullets,
+  stuffedCandyBullets,
+  candyBulletsWithoutilling,
+  colorfulDryBullets,
+];
