@@ -20,6 +20,7 @@ export type BattersOptionsProps =
   | `Tradicional`;
 
 export interface QuantityOptionsProps {
+  id: string;
   type: TypesOfRecipesProps;
   mass: string;
   quantity: number;
@@ -27,7 +28,7 @@ export interface QuantityOptionsProps {
 }
 
 export interface FlavorsOptionsProps {
-  id: number;
+  id: string;
   name: string;
   description: string | undefined;
   price: number;
@@ -40,7 +41,7 @@ export interface ColorOptionsProps {
 }
 
 export interface BulletsProps {
-  id: number;
+  id: string;
   title: string;
   description: string | undefined;
   flavors: FlavorsOptionsProps[] | null;
