@@ -17,12 +17,7 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/pages/*": ["./src/app/*"],
-      "@/styles/*": ["./src/styles/*"],
-      "@/utils/*": ["./src/utils/*"],
-      "@/static/*": ["./src/static/*"]
+      "@/public/*": ["./public/*"]
     },
     "plugins": [
       {
