@@ -12,10 +12,3 @@
   font-size: 2.4rem;
   color: var(--gray-40);
 }
-
-@media (min-width: 768px) {
-  .missingUnitImageWraper {
-    width: 20rem;
-    height: 10rem;
-  }
-}
