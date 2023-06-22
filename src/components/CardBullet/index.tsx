@@ -25,7 +25,7 @@ function CardBullet({ flavorName, price, medias }: CardBulletProps) {
       </div>
 
       <div className={styles.thumbnailWrapper}>
-        <ThumbnailCard medias={medias} />
+        <ThumbnailCard flavorName={flavorName} medias={medias} />
       </div>
     </section>
   );
