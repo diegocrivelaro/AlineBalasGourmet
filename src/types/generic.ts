@@ -1,4 +1,4 @@
-export type MediasTagsProps = `thumbnail` | `hero`;
+export type MediasTagsProps = `THUMBNAIL` | `HERO`;
 
 export interface WidthHeightProps {
   width: number;
