@@ -1,0 +1,10 @@
+.menuContainer {
+  max-width: var(--max-width-components);
+}
+
+@media (min-width: 768px) {
+  .menuContainer {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+  }
+}

@@ -1,5 +1,7 @@
 import SearchResultsList from "@/components/Sections/SearchResultsList";
 
+import styles from "@/styles/menu.module.css";
+
 import { metadataMenu } from "@/static/metadata";
 
 export const metadata = {
@@ -8,7 +10,7 @@ export const metadata = {
 
 export default function Cardapio() {
   return (
-    <main>
+    <main className={styles.menuContainer}>
       <SearchResultsList />
     </main>
   );
