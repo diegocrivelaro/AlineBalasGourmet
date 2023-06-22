@@ -2,6 +2,26 @@
   margin-top: calc(7.2rem + 3.4rem);
 }
 
+.informationWrapper {
+  width: 100%;
+}
+
+.bulletName {
+  font: 700 2.6rem var(--comfortaa-font);
+  letter-spacing: 0.026rem;
+  color: var(--black);
+}
+
+.quantityOptionsWrapper {
+  margin: 0.2rem 0 1.6rem;
+}
+
+.amountOfBullets {
+  font: 300 1.6rem var(--poppins-font);
+  letter-spacing: 0.016rem;
+  color: var(--grey-15);
+}
+
 .cards {
   display: flex;
   flex-direction: column;
