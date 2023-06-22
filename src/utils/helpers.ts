@@ -13,3 +13,17 @@ export const isMobile = (userAgent: string | null) => {
 
   return userAgents.mobile.some(mobileAgent => userAgent?.match(mobileAgent));
 };
+
+// TODO: Criar testes para essa função
+export const formatCurrencyInReais = (value: number | undefined) => {
+  if (value) {
+    const valueInReais = value.toLocaleString(`pt-br`, {
+      style: `currency`,
+      currency: `BRL`,
+    });
+
+    return valueInReais;
+  }
+
+  return `R$ 0,00`;
+};
