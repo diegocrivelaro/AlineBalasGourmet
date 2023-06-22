@@ -1,3 +1,7 @@
+.container {
+  margin-top: calc(7.2rem + 3.4rem);
+}
+
 .cards {
   display: flex;
   flex-direction: column;

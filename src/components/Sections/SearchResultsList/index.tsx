@@ -10,7 +10,7 @@ function SearchResultsList() {
   return (
     <>
       {bullets.map(bullet => (
-        <section key={bullet.id}>
+        <section className={styles.container} key={bullet.id}>
           <div className={styles.cards}>
             {bullet.flavors.map(flavor => (
               <CardBullet
