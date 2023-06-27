@@ -51,6 +51,7 @@
     "react/no-danger": "warn",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": ["warn", { "allow": "literal" }],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-closing-bracket-location": "off",
     "react/jsx-filename-extension": [
