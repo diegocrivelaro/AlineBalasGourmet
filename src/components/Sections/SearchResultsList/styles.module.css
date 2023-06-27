@@ -33,6 +33,17 @@
 }
 
 @media (min-width: 820px) {
+  .bulletName {
+    font-size: 3rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }

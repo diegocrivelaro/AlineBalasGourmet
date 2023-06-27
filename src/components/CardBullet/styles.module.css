@@ -42,4 +42,9 @@
     height: 18.4rem;
     gap: 1rem;
   }
+
+  .flavorName,
+  .price {
+    font-size: 1.8rem;
+  }
 }
