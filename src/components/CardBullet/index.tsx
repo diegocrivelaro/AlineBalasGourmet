@@ -19,9 +19,13 @@ function CardBullet({ flavorName, price, medias }: CardBulletProps) {
   return (
     <section className={styles.container}>
       <div className={styles.informationWrapper}>
-        <p className={styles.flavorName}>{flavorName}</p>
+        <p className={styles.flavorName}>
+          {flavorName}
+        </p>
 
-        <p className={styles.price}>{getFormattedPrice}</p>
+        <p className={styles.price}>
+          {getFormattedPrice}
+        </p>
       </div>
 
       <div className={styles.thumbnailWrapper}>
