@@ -39,6 +39,7 @@ function SearchResultsList() {
           <div className={styles.cards}>
             {bullet.flavors.map(flavor => (
               <CardBullet
+                bulletName={bullet.title}
                 flavorName={flavor.name}
                 price={flavor.price}
                 medias={flavor.medias}
