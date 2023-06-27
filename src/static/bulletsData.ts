@@ -307,7 +307,7 @@ const stuffedIcedBullets: BulletsProps = {
     {
       id: uuidv4(),
       type: `Meia receita`,
-      mass: `500`,
+      mass: `500g`,
       quantity: 60,
       price: 74,
     },
