@@ -3,7 +3,7 @@ import { MediasProps } from "./generic";
 export type TypesOfRecipesProps =
   | `Receita inteira`
   | `Meia receita`
-  | `Receita inteira com 2 sabores diferentes`;
+  | `Dois sabores`;
 
 export type ChocolateOptionsProps =
   | `Ao leite`
