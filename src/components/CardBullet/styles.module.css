@@ -18,14 +18,17 @@
 
 .flavorName,
 .price {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   font-family: var(--poppins-font);
-  text-overflow: ellipsis;
   color: var(--black);
   font-size: 1.6rem;
+}
+
+.flavorName {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .thumbnailWrapper {
