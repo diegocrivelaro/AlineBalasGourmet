@@ -30,12 +30,13 @@
 
 .thumbnailWrapper {
   width: 50%;
-  height: 11.2rem;
+  height: 100%;
   border-radius: 0.8rem;
 }
 
 @media (min-width: 820px) {
   .container {
+    height: 18.4rem;
     gap: 1rem;
   }
 }
