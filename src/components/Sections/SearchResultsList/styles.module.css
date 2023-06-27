@@ -23,7 +23,13 @@
 }
 
 .cards {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media (min-width: 820px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
