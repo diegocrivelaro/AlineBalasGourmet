@@ -12,12 +12,25 @@ function SearchResultsList() {
       {bullets.map(bullet => (
         <section className={styles.container} key={bullet.id}>
           <div className={styles.informationWrapper}>
-            <h3 className={styles.bulletName}>{bullet.title}</h3>
+            <h3 className={styles.bulletName}>
+              {bullet.title}
+            </h3>
 
             <ol className={styles.quantityOptionsWrapper}>
               {bullet.quantityOptions.map(option => (
                 <li className={styles.amountOfBullets} key={option.id}>
-                  {`${option.type} (${option.mass}, com aprox. ${option.quantity})`}
+                  {option.type}
+                  {` `}
+                  (
+                  <span className={styles.strong}>
+                    {option.mass}
+                  </span>
+                  , com aprox.
+                  {` `}
+                  <span className={styles.strong}>
+                    {option.quantity}
+                  </span>
+                  )
                 </li>
               ))}
             </ol>
