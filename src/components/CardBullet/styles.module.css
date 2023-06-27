@@ -12,17 +12,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 50%;
 }
 
 .flavorName,
 .price {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   font-family: var(--poppins-font);
+  text-overflow: ellipsis;
   color: var(--black);
   font-size: 1.6rem;
 }
 
 .thumbnailWrapper {
-  width: 14.2rem;
+  width: 50%;
   height: 11.2rem;
   border-radius: 0.8rem;
 }
