@@ -11,6 +11,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
 
   "files.associations": {
+    "*.css": "tailwindcss",
     ".env.": "dotenv",
   },
 }
