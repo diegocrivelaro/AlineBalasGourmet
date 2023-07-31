@@ -3,7 +3,17 @@
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
   "rules": {
     "unit-allowed-list": ["px", "rem", "%", "vw", "vh", "ms", "s", "fr", "deg"],
+    "no-descending-specificity": true,
+    "declaration-block-no-duplicate-properties": true,
+    "font-family-no-duplicate-names": true,
+    "keyframe-block-no-duplicate-selectors": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
     "selector-class-pattern": null,
+    "block-no-empty": true,
+    "color-no-hex": true,
+    "function-calc-no-unspaced-operator": true,
+    "media-query-list-comma-space-after": "always",
     "alpha-value-notation": "number"
   }
 }
