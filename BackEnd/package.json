@@ -2,7 +2,6 @@
   "name": "alinebalasgourmetbackend",
   "description": "Aline Balas Gourmet BackEnd Application",
   "author": "Diego Ferreira Crivelaro",
-  "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/diegocrivelaro/AlineBalasGourmet",
   "license": "MIT",
