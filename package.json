@@ -3,7 +3,7 @@
   "description": "Aline Balas Gourmet WEB Application",
   "author": "Diego Ferreira Crivelaro",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "engines": {
     "node": ">=18.15.x"
@@ -23,7 +23,8 @@
     "commit": "echo \"[🌀] Executando o lint-staged\" && echo \"[🌀] Executando o lint:fix direto do lint-staged\" && echo \"[🌀] Executando o stylelint direto do lint-staged\" && echo \"[🌀] Executando o prettier direto do lint-staged\" && yarn lint-staged && echo \"[✅] Lint-staged executado com sucesso! 🎉\" && git-cz",
     "prettier": "prettier --write .",
     "commit-msg": "echo \"[🌀] Executando o commitlint\" && npx --no -- commitlint --edit && echo \"[✅] Commitlint executado com sucesso! 🎉\"",
-    "pre-push": "echo \"[🌀] Executando o Lint\" && yarn lint && echo \"[🌀] Executando o Stylelint\" && yarn stylelint && echo \"[🌀] Executando o TypeCheck\" && yarn type-check && echo \"[🌀] Executando os Testes Unitários\" && yarn test"
+    "pre-push": "echo \"[🌀] Executando o Lint\" && yarn lint && echo \"[🌀] Executando o Stylelint\" && yarn stylelint && echo \"[🌀] Executando o TypeCheck\" && yarn type-check && echo \"[🌀] Executando os Testes Unitários\" && yarn test",
+    "analyze": "ANALYZE=true next build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
+    "@next/bundle-analyzer": "13.4.19",
     "@testing-library/dom": "8.18.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
