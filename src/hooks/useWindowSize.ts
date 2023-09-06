@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { useWindowSizeProps } from "@/types/hooks";
+import { UseWindowSizeProps } from "@/types/hooks";
 
 export default function useWindowSize() {
-  const [size, setSize] = useState<useWindowSizeProps>({ width: 0, height: 0 });
+  const [size, setSize] = useState<UseWindowSizeProps>({ width: 0, height: 0 });
 
   useEffect(() => {
     function updateSize() {

@@ -1,4 +1,4 @@
-export interface useWindowSizeProps {
+export interface UseWindowSizeProps {
   width: number;
   height: number;
 }
