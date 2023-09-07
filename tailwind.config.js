@@ -17,7 +17,7 @@ module.exports = {
       "green-50": `rgba(0 230 118 / 0.45)`,
       "green-45": `rgba(0 230 118 / 0.75)`,
       "green-35": `rgb(0 230 118)`,
-      "grey-15": `rgb(118 110 110)`,
+      "gray-15": `rgb(118 110 110)`,
     },
     extend: {},
   },
