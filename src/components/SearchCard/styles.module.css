@@ -1,0 +1,30 @@
+.searchCardContainer {
+  @apply w-full flex justify-between py-[1.4rem] px-3 bg-white;
+}
+
+.content {
+  @apply w-1/2;
+}
+
+.title {
+  font-family: var(--poppins-font);
+  @apply text-black text-base;
+}
+
+.description {
+  font-family: var(--poppins-font);
+  @apply text-gray-15 text-sm;
+}
+
+.price {
+  font-family: var(--poppins-font);
+  @apply text-black text-base font-medium;
+}
+
+.imageContainer {
+  @apply w-1/2 relative;
+}
+
+.imageContainer > img {
+  @apply object-cover w-full h-full;
+}
